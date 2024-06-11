@@ -8,13 +8,16 @@
 
 /* reusable stylying */
 html, body {
-  @apply  text-secondary font-manrope scroll-smooth;
+  @apply  text-tertiary font-manrope scroll-smooth;
 }
 h1,h2,h3,h4,h5,h6{
 @apply  font-reckless
 }
 h2{
-  @apply text-[28px] md:text-[41px] leading-none font-medium
+  @apply text-[28px] md:text-[41px] leading-none font-medium text-primary
+}
+h3{
+  @apply text-[22px] md:text-[30px] leading-none font-medium
 }
 p{
   @apply text-base font-normal;
@@ -29,18 +32,20 @@ input, textarea{
   @apply outline-none border border-[#D0D5DD] placeholder-[#B6BABD] text-[#C2C6CA] rounded-[6px] p-[16px] bg-transparent
 }
 .homeHeader {
-  @apply flex justify-between items-center gap-4 px-[5%] text-base h-[110px] fixed top-0 right-0 left-0 z-20;
+  @apply flex justify-between items-center gap-4 px-[2%] lg:px-[3%] text-base h-[80px] fixed top-0 right-0 left-0 z-20;
 }
 .homeNavMenu {
-  @apply bg-[#F2F8FC] pt-4 pb-8 px-[5%] w-full fixed top-[110px] bottom-0 transition-all z-10 no-scrollbar overflow-y-auto;
+  @apply bg-[#F2F8FC] pt-4 pb-8 px-[5%] w-full fixed top-[80px] bottom-0 transition-all z-10 no-scrollbar overflow-y-auto;
 }
 .menuList{
-  @apply text-[#15110D] hover:text-primary focus:text-primary
+  @apply text-[#15110D] hover:text-primary focus:text-primary;
 }
 .active {
   @apply text-primary font-bold;
 }
-
+.paddingX{
+  @apply px-[2%] lg:px-[3%];
+}
 
 /* Contained */
 .contained-button {
@@ -59,13 +64,13 @@ transition: all 0.3s 0.08s linear;
 top: 50%;
 left: 50%;
 width: 10em;
-height: 3em;
+height: 2em;
 transform: translate(-50%, -50%);
 }
 .contained-button:hover .outside-border {
 display: block;
 width: 230px;
-height: 4.7em;
+height: 3em;
 }
 .full-rounded {
 border-radius: 2em;
@@ -87,14 +92,14 @@ border-radius: 2em;
   left: 0;
   top: 0;
   transition: all 0.5s ease-in-out;
-  background-color: #02923f;
+  background-color: #28176f;
   visibility: hidden;
   height: 10px;
   width: 10px;
   z-index: -1;
 }
 .outline-button:hover {
-  box-shadow: 1px 1px 200px #02923f;
+  box-shadow: 1px 1px 200px #28176f;
   color: #fff;
   border: none;
 }

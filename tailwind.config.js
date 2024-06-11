@@ -8,11 +8,11 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#02923f",
-        secondary: "#28176f",
+        primary: "#28176f",
+        secondary: "#02923f",
+        tertiary: '#443829',
         gray: "#6D6D6D",
         "black-rgba": "rgba(58, 58, 58, 0.6)",
-        tertiary: "#F2F8FC",
       },
       boxShadow: {
         "3xl":

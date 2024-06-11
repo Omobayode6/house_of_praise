@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='px-[5%] py-[100px] text-[#C2C6CA] bg-[#161313] '>
+    <div className='px-[2%] lg-px-[3%] py-[100px] text-[#C2C6CA] bg-[#161313] '>
       <div className='flex flex-col md:flex-row justify-between gap-8'>
         <div className='w-[264px]'>
           <img src={logo} alt="Prometrics logo" className='w-[150px] rounded-[16px]'/>

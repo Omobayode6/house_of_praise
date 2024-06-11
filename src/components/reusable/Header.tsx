@@ -42,7 +42,7 @@ const  Header = () =>{
             <li className='hover:text-primary'><NavLink to="/ministry">miistries</NavLink></li>
             <li className='mb-6 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           </ul>
-          <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-secondary text-white font-semibold py-5 px-4'>
+          <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-primary text-white font-semibold py-5 px-4'>
             <a href="https://calendly.com/prometricspro/legal-consult" target='_blank' >Join Us </a>
           </button>
         </nav>
@@ -62,7 +62,7 @@ const  Header = () =>{
         </ul>
       </nav>
       <a href="" className='hidden md:flex justify-center items-center'> 
-        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-secondary text-white font-semibold px-4 py-5'>
+        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-primary text-white font-semibold px-4 py-2'>
           <span>Join Us</span>
           <div className="outside-border full-rounded"></div>
         </button>
