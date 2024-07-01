@@ -11,6 +11,8 @@ import preaching from '../assets/images/preaching.png'
 import services from '../assets/images/services.png'
 import { useState } from 'react'
 import ImageTextSlideUp from '../components/reusable/ImageTextSlideUp'
+import { HandCoins } from 'lucide-react'
+import { toast } from 'react-toastify'
 
 const Home = () => {
   const [open, setOpen] = useState(false)
@@ -161,7 +163,39 @@ const Home = () => {
               </div>
             </div>
 
+            {/* Giving */}
+            <div className='pb-[70px]'>
+              <h2 className='text-center'>Giving</h2>
+              <p className='text-center mb-8'>The Lord Loves a cheerful giver. You can transfer to this account number</p>
+              <div>
+                <div className='bg-white max-w-[300px] rounded-[12px] py-[30px] flex flex-col justify-center items-center gap-4 mx-auto '>
+                  <HandCoins color='#28176f' size={50} />
+                  <div>
+                    <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight mb-2'>10283454</h4>
+                    <p className='text-center'>House of Praise</p>
+                    <p className='text-center'>United Bank</p>
+                  </div>
+                  <a href="" target='_blank'>
+                    <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-4 py-3 font-semibold'
+                      onClick={(e) => { 
+                        e.preventDefault()
+                        navigator.clipboard.writeText('10283454')
+                        toast.success('Account number copied successfully')
+                      }}
+                    >
+                      Copy
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Testimonia Section Slider */}
+            <div>
+
+            </div>
+
+            {/* Media */}
             <div>
 
             </div>
