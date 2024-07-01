@@ -71,7 +71,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className='px-[5%] bg-[#15110D] text-[#F2F8FC] py-[100px] md:pt-[200px] mt-[50px] md:mt-[350px]'>
+        <div className='px-[5%] bg-[#5f5f5f] text-[#F2F8FC] py-[100px] md:pt-[200px] mt-[50px] md:mt-[350px]'>
           <div className='max-w-[654px] text-center mx-auto mb-10'>
             <p className='text-[14px] font-medium mb-2'>REACH OUT</p>
             <h2 className="text-white">Get In Touch</h2>

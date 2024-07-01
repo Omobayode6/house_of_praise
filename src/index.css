@@ -41,7 +41,7 @@ input, textarea{
   @apply text-[#15110D] hover:text-primary focus:text-primary;
 }
 .active {
-  @apply text-primary font-bold;
+  @apply text-secondary font-bold;
 }
 .paddingX{
   @apply px-[2%] lg:px-[3%];
