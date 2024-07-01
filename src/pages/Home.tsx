@@ -15,7 +15,7 @@ import ImageTextSlideUp from '../components/reusable/ImageTextSlideUp'
 const Home = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div className='bg-[#F9FAFB] py-[80px] '>
+    <div className='bg-[#F9FAFB] pt-[80px] '>
       <Header/>
       <main>
         {/* slider */}
@@ -95,7 +95,7 @@ const Home = () => {
             </div>
 
             {/* Ministries */}
-            <div className="bg-[#F9FAFB] flex flex-col md:flex-row justify-center items-center">
+            <div className="bg-[#F9FAFB] flex flex-col md:flex-row justify-center items-center mb-[70px]">
               <div className='mb-4 md:mb-0 md:w-[300px] h-full md:bg-[#e4655f] flex flex-col justify-center'>
                 <div className='md:max-w-[250px] mx-auto'>
                   <p className="text-[14px] text-black font-bold mb-2">Ministry</p>
@@ -163,7 +163,7 @@ const Home = () => {
 
             {/* Testimonia Section Slider */}
             <div>
-              
+
             </div>
 
             {/* template */}
