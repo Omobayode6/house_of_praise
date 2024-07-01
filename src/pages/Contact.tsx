@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-[#f2f8fc] mt-[110px]'>
         <HeroSection subtitile='Reach Out' titile='Contact Us' menu='Contact' bgimage='contactbg'/>
         {/* Contact Cards */}
         <div className='px-[5%] flex flex-col md:flex-row justify-center items-center gap-8 md:absolute left-0 right-0'>
@@ -71,10 +71,10 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className='px-[5%] bg-[#15110D] text-[#F2F8FC] py-[100px] md:pt-[200px] mt-[50px] md:mt-[350px] mb-[50px] md:mb-[150px]'>
+        <div className='px-[5%] bg-[#15110D] text-[#F2F8FC] py-[100px] md:pt-[200px] mt-[50px] md:mt-[350px]'>
           <div className='max-w-[654px] text-center mx-auto mb-10'>
             <p className='text-[14px] font-medium mb-2'>REACH OUT</p>
-            <h2>Get In Touch</h2>
+            <h2 className="text-white">Get In Touch</h2>
           </div>
           <form ref={form} onSubmit={sendEmail} className='sm:w-fit mx-auto'>
             <div className='flex flex-col sm:flex-row gap-x-8 gap-y-4 mb-4'>
@@ -107,26 +107,7 @@ const Contact = () => {
               <span className=''>Send your message</span>
             </button>
           </form>
-
         </div>
-
-        {/* CEO profile */}
-        {/* <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
-          <div className='max-w-[530px] '>
-            <p className=' text-[18px] md:text-[23px] text-[#555758] leading-tight mb-8'> Prometrics represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notariization.</p>
-            <p className='text-[23px] md:text-[28px] font-semibold mb-2 '>Dr. Fola Odion, JD, MBA</p>
-            <p className='text-[16px] md:text-[18px] md:[20px] font-medium mb-8 '>Ph.D. in Law l MBA l General Counsel</p>
-            <div className='flex gap-x-2'>
-              <a href="https://www.facebook.com/prometricspro?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Prometrics Facebook" /></a>
-              <a href="https://x.com/prometricspro?s=21" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Prometrics twitter" /></a>
-              <a href="https://www.instagram.com/prometricspro/?igsh=MTc1dXd0a2tlYTZreg%3D%3D" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Prometrics instagram" /></a>
-              <a href="https://www.linkedin.com/company/prometrics-professional-hub/" target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt="Prometrics linkedIn" /></a>
-            </div>
-          </div>
-          <div className='md:h-[435px]'>
-            <img src={} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
-          </div>
-        </div> */}
       </div>
       <Footer/>
 
