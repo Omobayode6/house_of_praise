@@ -47,6 +47,14 @@ input, textarea{
   @apply px-[2%] lg:px-[3%];
 }
 
+/* .imageTextSlideUp{
+  max-height: 0%;
+} */
+.imageTextSlideUp:hover .hidden, .imageTextSlideUp:focus .hidden{
+  display: block;
+  margin-top: 16px;
+}
+
 /* Contained */
 .contained-button {
   position: relative;
