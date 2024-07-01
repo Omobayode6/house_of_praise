@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='w-[264px]'>
           <img src={logo} alt="Prometrics logo" className='w-[150px] rounded-[16px]'/>
           <p className='mt-8 mb-4 '>The Redeemed Christian Church of God House of Praise Uk is a home for all worshiper</p>
-          <p className='text-[14px] font-medium '>© 2024 Prometrics. All rights reserved.</p>
+          <p className='text-[14px] font-medium '>© 2024 House of Praise. All rights reserved.</p>
           {/* Socials */}
           <div className='flex gap-x-2 mt-4 text-white'>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Prometrics Facebook" /></a>
@@ -55,10 +55,6 @@ const Footer = () => {
           <a href='' target='_blank'>21 westly way uk</a>
         </div>
       </div>
-
-      
-
-
     </div>
   )
 }
