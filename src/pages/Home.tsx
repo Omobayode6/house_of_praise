@@ -64,169 +64,139 @@ const Home = () => {
               <h3 className='mt-4 mb-2'>Exhortation</h3>
               <p className='w-[350px] text-center'>We invite you to see for yourself how exciting church can be when the focus is simple and people are free to go after God with passion.</p>
             </div>
-
-            {/* Our Services*/}
-            <div className='w-full pb-[70px]'>
-              <h2 className='text-center'>Our Setrvices</h2>
-              <p className='text-center mb-8'>Join us in any of our services</p>
-              <div className='flex justify-center items-center gap-8'>
-                <div className='imageTextSlideUp relative'>
-                  <img src={service} alt="" className='w-[280px]'/>
-                  <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
-                    <h3 className='font-bold'>Sunder Service</h3>
-                    <p className={`transition duration-2000 ease-in-out hidden `}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!</p>
-                  </div>
+          </div>
+          {/* Our Services*/}
+          <div className='w-full pb-[70px]'>
+            <h2 className='text-center'>Our Setrvices</h2>
+            <p className='text-center mb-8'>Join us in any of our services</p>
+            <div className='flex justify-center items-center gap-8'>
+              <div className='imageTextSlideUp relative'>
+                <img src={service} alt="" className='w-[280px]'/>
+                <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
+                  <h3 className='font-bold'>Sunder Service</h3>
+                  <p className={`transition duration-2000 ease-in-out hidden `}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!</p>
                 </div>
+              </div>
 
-                <div className='imageTextSlideUp relative'>
-                  <img src={preaching} alt="" className='w-[280px]'/>
-                  <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
-                    <h3 className='font-bold'>Midweek Service</h3>
-                    <p className={`transition duration-2000 ease-in-out hidden `}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!</p>
-                  </div>
+              <div className='imageTextSlideUp relative'>
+                <img src={preaching} alt="" className='w-[280px]'/>
+                <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
+                  <h3 className='font-bold'>Midweek Service</h3>
+                  <p className={`transition duration-2000 ease-in-out hidden `}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!</p>
                 </div>
+              </div>
 
-                <div className='imageTextSlideUp relative'>
-                  <img src={service} alt="" className='w-[280px]'/>
-                  <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
-                    <h3 className='font-bold '>Friday Fellowship</h3>
-                    <p className={`transition duration-2000 ease-in-out hidden `}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!</p>
-                  </div>
+              <div className='imageTextSlideUp relative'>
+                <img src={service} alt="" className='w-[280px]'/>
+                <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
+                  <h3 className='font-bold '>Friday Fellowship</h3>
+                  <p className={`transition duration-2000 ease-in-out hidden `}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Ministries */}
-            <div className="bg-[#F9FAFB] flex flex-col md:flex-row justify-center items-center mb-[70px]">
-              <div className='mb-4 md:mb-0 md:w-[300px] h-full md:bg-[#e4655f] flex flex-col justify-center'>
-                <div className='md:max-w-[250px] mx-auto'>
-                  <p className="text-[14px] text-black font-bold mb-2">Ministry</p>
-                  <h2 className="leading-tight md:text-white">
-                    Join any of our Ministries
-                  </h2>
-                </div>
-              </div>
-              <div>
-                <div className='flex justify-center items-center gap-8'>
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Sunday School'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                  <ImageTextSlideUp
-                    image={services}
-                    title={`Children's Church`}
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Prayer'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                </div>
-
-                <div className='flex justify-center items-center gap-8 mt-4'>
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Ushering'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Choir'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Multimedia'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                </div>
-
-                <div className='flex justify-center items-center gap-8 mt-4'>
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Sanctuary Keepers'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Welfare'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                  <ImageTextSlideUp
-                    image={services}
-                    title='Evangelism'
-                    text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
-                  />
-                </div>
+          {/* Ministries */}
+          <div className="bg-[#F9FAFB] flex flex-col md:flex-row mb-[70px]">
+            <div className='mb-4 md:mb-0 w-full max-w-[300px] min-h-[100%] md:bg-[#e4655f] flex flex-col justify-center'>
+              <div className='md:max-w-[250px] mx-auto'>
+                <p className="text-[14px] text-black font-bold mb-2">Ministry</p>
+                <h2 className="leading-tight md:text-white">
+                  Join any of our Ministries
+                </h2>
               </div>
             </div>
-
-            {/* Giving */}
-            <div className='pb-[70px]'>
-              <h2 className='text-center'>Giving</h2>
-              <p className='text-center mb-8'>The Lord Loves a cheerful giver. You can transfer to this account number</p>
-              <div>
-                <div className='bg-white max-w-[300px] rounded-[12px] py-[30px] flex flex-col justify-center items-center gap-4 mx-auto '>
-                  <HandCoins color='#28176f' size={50} />
-                  <div>
-                    <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight mb-2'>10283454</h4>
-                    <p className='text-center'>House of Praise</p>
-                    <p className='text-center'>United Bank</p>
-                  </div>
-                  <a href="" target='_blank'>
-                    <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-4 py-3 font-semibold'
-                      onClick={(e) => { 
-                        e.preventDefault()
-                        navigator.clipboard.writeText('10283454')
-                        toast.success('Account number copied successfully')
-                      }}
-                    >
-                      Copy
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonia Section Slider */}
             <div>
-
-            </div>
-
-            {/* Media */}
-            <div>
-
-            </div>
-
-            {/* template */}
-            {/* <div className='pb-[70px]'>
-              <h2 className='text-center'>Our Setrvices</h2>
-              <p className='text-center mb-8'>Join us in any of our services</p>
               <div className='flex justify-center items-center gap-8'>
-                <div>
-                  <img src={services} alt="" />
-                  <h3 className='mt-4 mb-2 text-center'>Sunder Service</h3>
-                  <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam sequi laboriosam laborum corrupti natus ipsa nesciunt possimus, itaque molestiae.</p>
-                </div>
-
-                <div>
-                  <img src={services} alt="" />
-                  <h3 className='mt-4 mb-2 text-center'>Midweek Service</h3>
-                  <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam sequi laboriosam laborum corrupti natus ipsa nesciunt possimus, itaque molestiae.</p>
-                </div>
-
-                <div>
-                  <img src={services} alt="" />
-                  <h3 className='mt-4 mb-2 text-center'>Friday Fellowship</h3>
-                  <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam sequi laboriosam laborum corrupti natus ipsa nesciunt possimus, itaque molestiae.</p>
-                </div>
-
+                <ImageTextSlideUp
+                  image={services}
+                  title='Sunday School'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+                <ImageTextSlideUp
+                  image={services}
+                  title={`Children's Church`}
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+                <ImageTextSlideUp
+                  image={services}
+                  title='Prayer'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
               </div>
-            </div> */}
 
-            
+              <div className='flex justify-center items-center gap-8 mt-4'>
+                <ImageTextSlideUp
+                  image={services}
+                  title='Ushering'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+                <ImageTextSlideUp
+                  image={services}
+                  title='Choir'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+                <ImageTextSlideUp
+                  image={services}
+                  title='Multimedia'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+              </div>
+
+              <div className='flex justify-center items-center gap-8 mt-4'>
+                <ImageTextSlideUp
+                  image={services}
+                  title='Sanctuary Keepers'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+                <ImageTextSlideUp
+                  image={services}
+                  title='Welfare'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+                <ImageTextSlideUp
+                  image={services}
+                  title='Evangelism'
+                  text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ipsam, sed voluptates eveniet voluptas a? Rerum nesciunt dolor perferendis!'
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Giving */}
+          <div className='pb-[70px]'>
+            <h2 className='text-center'>Giving</h2>
+            <p className='text-center mb-8'>The Lord Loves a cheerful giver. You can transfer to this account number</p>
+            <div>
+              <div className='bg-white max-w-[300px] rounded-[12px] py-[30px] flex flex-col justify-center items-center gap-4 mx-auto '>
+                <HandCoins color='#28176f' size={50} />
+                <div>
+                  <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight mb-2'>10283454</h4>
+                  <p className='text-center'>House of Praise</p>
+                  <p className='text-center'>United Bank</p>
+                </div>
+                <a href="" target='_blank'>
+                  <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-4 py-3 font-semibold'
+                    onClick={(e) => { 
+                      e.preventDefault()
+                      navigator.clipboard.writeText('10283454')
+                      toast.success('Account number copied successfully')
+                    }}
+                  >
+                    Copy
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Media */}
+          <div className='pb-[70px]'>
+            <h2 className='text-center'>Galery</h2>
+            <p className='text-center mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nostrum.</p>
+            <div>
+              
+            </div>
           </div>
         </div>
       </main>

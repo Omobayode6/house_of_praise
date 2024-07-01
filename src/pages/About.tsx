@@ -4,7 +4,7 @@ import Footer from '../components/reusable/Footer'
 
 const About = () => {
   return (
-    <div className='px-[5%] bg-[#F9FAFB] py-[100px] '>
+    <div className='px-[5%] bg-[#F9FAFB] pt-[100px] '>
       <Header/>
       <Footer/>
     </div>
