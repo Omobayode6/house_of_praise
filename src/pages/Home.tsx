@@ -168,7 +168,7 @@ const Home = () => {
             <h2 className='text-center'>Giving</h2>
             <p className='text-center mb-8'>The Lord Loves a cheerful giver. You can transfer to this account number</p>
             <div>
-              <div className='bg-white max-w-[300px] rounded-[12px] py-[30px] flex flex-col justify-center items-center gap-4 mx-auto '>
+              <div className='bg-white max-w-[300px] rounded-[12px] py-[30px] flex flex-col justify-center items-center gap-4 mx-auto shadow-md '>
                 <HandCoins color='#28176f' size={50} />
                 <div>
                   <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight mb-2'>10283454</h4>

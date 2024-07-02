@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base; @tailwind components; @tailwind utilities;
 
@@ -11,8 +11,9 @@ html, body {
   @apply  text-tertiary font-manrope scroll-smooth;
 }
 h1,h2,h3,h4,h5,h6{
-@apply  font-reckless
+@apply font-montserrat;
 }
+
 h2{
   @apply text-[28px] md:text-[41px] leading-none font-medium text-primary
 }
@@ -164,4 +165,13 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 /* Backgrounds */
 .contactbg{
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./assets/images/contact-us.jpg)
+}
+.aboutbg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(./assets/images/aboutbg.jpg)
+}
+.givingbg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(./assets/images/giving.png)
+}
+.mediabg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(./assets/images/media.jpg)
 }

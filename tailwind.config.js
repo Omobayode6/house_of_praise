@@ -4,7 +4,8 @@ export default {
   theme: {
     fontFamily: {
       manrope: ["Manrope", "sans-serif"],
-      reckless: ["Reckless Neue", "serif"],
+      montserrat: ["Montserrat", "sans-serif"],
+      badScript: ["Bad Script", "cursive"],
     },
     extend: {
       colors: {

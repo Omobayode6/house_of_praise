@@ -3,7 +3,7 @@ import React from 'react'
 type ImageProps = {
   image: any; 
   title: string; 
-  text: string; 
+  text?: string; 
   font?: any;
 };
 

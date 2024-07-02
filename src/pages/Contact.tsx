@@ -1,8 +1,4 @@
 import React, {useRef, useState } from "react";
-import facebook from '../assets/icons/facebook.svg'
-import twitter from '../assets/icons/twitter.svg'
-import instagram from '../assets/icons/instagram.svg'
-import linkedIn from '../assets/icons/linkedIn.svg'
 import headphone from '../assets/icons/headphone.svg'
 import chat from '../assets/icons/chat.svg'
 import check from '../assets/images/check.gif'
