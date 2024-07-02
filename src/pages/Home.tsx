@@ -195,16 +195,42 @@ const Home = () => {
             <h2 className='text-center'>Galery</h2>
             <p className='text-center mb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nostrum.</p>
             <div>
-              
+              <div className='flex justify-center gap-4 flex-wrap'>
+                {galleries.map((gallery, key)=>(
+                  <div key={key} className='w-[300px] relative'>
+                    <img src={gallery?.image} alt="" />
+                    <p className='absolute bottom-0 left-3 text-white font-semibold bg-[#555555] px-3 py-1 rounded-[16px]'>
+                      {gallery?.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className='w-fit mx-auto'>
+                <button className='outline-button type1 outline-btn-txt w-[194px] h-[46px] border-2 border-primary rounded-[40px] mt-6 text-primary font-semibold '>
+                  <Link to='/media'>see More</Link>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </main>
-      
-
       <Footer/>
     </div>
   )
 }
 
+const galleries = [
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday school'},
+  {image: './gallery1.jpg', title: 'Picnic'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+  {image: './gallery1.jpg', title: 'Sunday service'},
+]
 export default Home
