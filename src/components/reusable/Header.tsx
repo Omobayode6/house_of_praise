@@ -35,7 +35,7 @@ const  Header = () =>{
         </button>
         <nav className={showMenu ? 'homeNavMenu right-0 duration-300' : 'homeNavMenu -right-full duration-700'}>
           <ul className="flex flex-col gap-5 text-center text-[#15110D] font-medium">
-            <li className="hover:text-primary"><NavLink to="/house_of_praise">Home</NavLink></li>
+            <li className="hover:text-primary"><NavLink to="/house_of_praise/">Home</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/about">About</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/giving">Giving</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/media">Media</NavLink></li>
@@ -53,7 +53,7 @@ const  Header = () =>{
       {/* Desktop Menu */}
       <nav className='hidden md:flex'>
         <ul className="flex items-center gap-6 text-[#15110D] font-medium">
-          <li className="hover:text-primary"><NavLink to="/house_of_praise">Home</NavLink></li>
+          <li className="hover:text-primary"><NavLink to="/house_of_praise/">Home</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/about">About</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/giving">Giving</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/media">Media</NavLink></li>
