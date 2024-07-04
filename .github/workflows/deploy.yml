@@ -1,44 +1,35 @@
-name: pnpm Example Workflow
+name: Deploy
+
 on:
-  push: 
-  branches: [ main]
+  push:
+    branches: [ main ]
 
- permissions:
-   contents: read
-   pages: write
-   id-token: write
-
- jobs:
-   build:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
     environment:
-    name: github-pages
-  url: ${{steps.deployment.outputs.page_url}}
-runs-on: ubuntu-latest
-
-strategy:
-  matrix:
-    node-version: [18]
-steps:
-  - uses: actions/checkout@v3
-  - uses: pnpm/action-setup@v2
-    with:
-      version: 7
-  - name: Use Node.js ${{ matrix.node-version }}
-    uses: actions/setup-node@v3
-    with:
-      node-version: ${{ matrix.node-version }}
-      cache: pnpm
-  - name: Install dependencies
-    run: pnpm install
-  - name: Build
-    run: pnpm run build
-  - name: Setup Pages
-    uses: actions/configure-pages@v3
-  - name: Upload artifact
-    uses: actions/upload-pages-artifact@v1
-    with:
-      # Upload dist repository
-       path: ./dist
-  - name: Deploy to GitHub Pages
-    id: deployment
-    uses: actions/deploy-pages@v1
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: install dependencies
+        run: pnpm ci
+      - name: build app
+        run: pnpm run build
+        env:
+          PUBLIC_URL: /game
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v1
