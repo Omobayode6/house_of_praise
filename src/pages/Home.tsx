@@ -23,9 +23,9 @@ const Home = () => {
         {/* slider */}
         <Slider/>
         <div className='paddingX '>
-          <div className=' flex flex-col-reverse lg:flex-row items-center gap-8'>
+          <div className=' flex flex-col-reverse lg:flex-row items-center gap-8 py-[50px]'>
             <img src={about} alt="house of praise" className='transform -scale-x-100 md:max-w-[600px]'/>
-            <div className='py-[50px]'>
+            <div className=''>
               <p className='text-[14px] font-medium mb-2'>Welcome to</p>
               <h2 className='max-w-full mb-6'>House of Praise</h2>
               <p className='mb-2 leading-relaxed '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, doloribus?</p>
