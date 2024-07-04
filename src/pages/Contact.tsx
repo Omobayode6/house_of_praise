@@ -47,7 +47,7 @@ const Contact = () => {
             <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight '>Join us Today!</h4>
             <p className='text-center'>Ready to take the next step in your spiritual jouney with God?</p>
             <a href="" target='_blank'>
-              <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-4 py-3 font-semibold'>
+              <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-16 md:px-4 py-3 font-semibold'>
                 Join us
               </button>
             </a>

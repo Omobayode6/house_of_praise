@@ -43,7 +43,7 @@ const  Header = () =>{
             <li className='mb-6 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-primary text-white font-semibold py-5 px-4'>
-            <a href="https://calendly.com/prometricspro/legal-consult" target='_blank' >Join Us </a>
+            <a href="" >Join Us </a>
           </button>
         </nav>
       </div>

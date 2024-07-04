@@ -15,7 +15,7 @@ const About = () => {
       <div className='paddingX'>
         <div className=' flex flex-col-reverse lg:flex-row items-center gap-8 py-[70px]'>
           <img src={about} alt="Prometrics CEO" className='hidden md:flex max-w-[600px]'/>
-          <img src={aboutMobile} alt="Prometrics CEO" className='md:hidden max-w-[600px]'/>
+          <img src={aboutMobile} alt="Prometrics CEO" className='md:hidden '/>
           <div className=''>
             <div>
               <div className='flex gap-2'>
@@ -62,7 +62,7 @@ const About = () => {
         <div className='pb-[70px]'>
           <h2 className='text-center'>Our Pastors</h2>
           <p className='text-center mb-8'>We are commited to your spiritual growth.</p>
-          <div className='flex justify-center gap-4'>
+          <div className='flex flex-col md:flex-row justify-center items-center gap-4'>
             <ImageTextSlideUp
               image={pastor}
               title='Pastor A'

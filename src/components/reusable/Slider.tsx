@@ -61,10 +61,10 @@ const Slider = () => {
             style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${slide.bgimg})`}}
           >
             <div className="w-[504px] mt-[40vh] mb-[50px]">
-              <h2 className="text-white text-wrap text-[50px] font-semibold leading-normal mb-[16px]">
+              <h2 className="text-white text-wrap text-[40px] md:text-[50px] font-semibold leading-normal mb-[16px]">
                 {slide.title}
               </h2>
-              <p className="w-[504px] text-wrap text-white text-base font-normal leading-normal">
+              <p className="w-[350px] md:w-[504px] text-wrap text-white text-base font-normal leading-normal">
                 {slide.subTitle}
               </p>
             </div>

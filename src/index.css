@@ -33,7 +33,7 @@ input, textarea{
   @apply outline-none border border-[#D0D5DD] placeholder-[#B6BABD] text-[#C2C6CA] rounded-[6px] p-[16px] bg-transparent
 }
 .homeHeader {
-  @apply flex justify-between items-center gap-4 px-[2%] lg:px-[3%] text-base h-[80px] fixed top-0 right-0 left-0 z-20;
+  @apply flex justify-between items-center gap-4 px-[5%] md:px-[3%] text-base h-[80px] fixed top-0 right-0 left-0 z-20;
 }
 .homeNavMenu {
   @apply bg-[#F2F8FC] pt-4 pb-8 px-[5%] w-full fixed top-[80px] bottom-0 transition-all z-10 no-scrollbar overflow-y-auto;
@@ -45,7 +45,7 @@ input, textarea{
   @apply text-secondary font-bold;
 }
 .paddingX{
-  @apply px-[2%] lg:px-[3%];
+  @apply px-[5%] lg:px-[3%];
 }
 
 /* .imageTextSlideUp{
@@ -108,7 +108,7 @@ border-radius: 2em;
   z-index: -1;
 }
 .outline-button:hover {
-  box-shadow: 1px 1px 200px #28176f;
+  box-shadow: 1px 1px 5px #28176f;
   color: #fff;
   border: none;
 }

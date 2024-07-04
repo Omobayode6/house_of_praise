@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt="Prometrics linkedIn" /></a>
         </div>
         {/* Quick Links */}
-        <div className='flex gap-4'>
+        <div className='flex justify-center flex-wrap gap-4'>
           <NavLink to="/">Home</NavLink> |
           <NavLink to="/about">About</NavLink> |
           <NavLink to="/giving">Giving</NavLink> |

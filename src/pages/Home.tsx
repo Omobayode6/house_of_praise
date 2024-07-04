@@ -24,7 +24,7 @@ const Home = () => {
         <Slider/>
         <div className='paddingX '>
           <div className=' flex flex-col-reverse lg:flex-row items-center gap-8'>
-            <img src={about} alt="Prometrics CEO" className='transform -scale-x-100 max-w-[600px]'/>
+            <img src={about} alt="house of praise" className='transform -scale-x-100 md:max-w-[600px]'/>
             <div className='py-[50px]'>
               <p className='text-[14px] font-medium mb-2'>Welcome to</p>
               <h2 className='max-w-full mb-6'>House of Praise</h2>
@@ -37,7 +37,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className='flex justify-center gap-6 flex-wrap'>
+          <div className='flex justify-center gap-x-6 flex-wrap'>
             <div className='flex flex-col items-center'>
               <div className='w-fit'>
                 <div className='w-[150px] h-[150px] rounded-[50%] bg-gradient-to-b from-primary to-white relative top-[50px]'/>
@@ -69,7 +69,7 @@ const Home = () => {
           <div className='w-full pb-[70px]'>
             <h2 className='text-center'>Our Setrvices</h2>
             <p className='text-center mb-8'>Join us in any of our services</p>
-            <div className='flex justify-center items-center gap-8'>
+            <div className='flex flex-col md:flex-row justify-center items-center gap-y-8 md:gap-x-8'>
               <div className='imageTextSlideUp relative'>
                 <img src={service} alt="" className='w-[280px]'/>
                 <div className='w-full bg-[#292929] text-white absolute bottom-0 px-3 py-4'>
@@ -98,16 +98,16 @@ const Home = () => {
 
           {/* Ministries */}
           <div className="bg-[#F9FAFB] flex flex-col md:flex-row mb-[70px]">
-            <div className='mb-4 md:mb-0 w-full max-w-[300px] min-h-[100%] md:bg-[#e4655f] flex flex-col justify-center'>
+            <div className='mb-8 md:mb-0 w-full md:max-w-[300px] min-h-[100%] md:bg-[#e4655f] flex flex-col justify-center'>
               <div className='md:max-w-[250px] mx-auto'>
                 <p className="text-[14px] text-black font-bold mb-2">Ministry</p>
                 <h2 className="leading-tight md:text-white">
-                  Join any of our Ministries
+                  Join any Ministries
                 </h2>
               </div>
             </div>
             <div>
-              <div className='flex justify-center items-center gap-8'>
+              <div className='flex flex-col md:flex-row justify-center items-center gap-8'>
                 <ImageTextSlideUp
                   image={services}
                   title='Sunday School'
@@ -125,7 +125,7 @@ const Home = () => {
                 />
               </div>
 
-              <div className='flex justify-center items-center gap-8 mt-4'>
+              <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-4'>
                 <ImageTextSlideUp
                   image={services}
                   title='Ushering'
@@ -143,7 +143,7 @@ const Home = () => {
                 />
               </div>
 
-              <div className='flex justify-center items-center gap-8 mt-4'>
+              <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-4'>
                 <ImageTextSlideUp
                   image={services}
                   title='Sanctuary Keepers'

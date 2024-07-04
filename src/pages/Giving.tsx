@@ -12,11 +12,11 @@ const Giving = () => {
       <Header/>
       <HeroSection subtitile='House Of Praise' titile='Giving' menu='Giving' bgimage='givingbg'/>
       <div className='paddingX'>
-        <div className='py-[70px] flex justify-center gap-8'>
+        <div className='py-[70px] flex flex-col md:flex-row justify-center gap-8'>
           <div>
-            <img src={give} alt="" className='rounded-tl-[50%] rounded-br-[50%] max-w-[400px]' />
+            <img src={give} alt="" className='rounded-tl-[50%] rounded-br-[50%] md:max-w-[400px]' />
             <h3 className='mt-4 mb-1'>Want to Sow Seed?</h3>
-            <p className='w-[400px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut! Lorem ipsum dolor sit amet consec</p>
+            <p className='max-w-[400px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut! Lorem ipsum dolor sit amet consec</p>
           </div>
           <div className='bg-white max-w-[600px] rounded-[12px] px-[50px] py-[30px] flex flex-col justify-center items-center gap-4 shadow-md'>
             <HandCoins color='#28176f' size={50} />
@@ -26,7 +26,7 @@ const Giving = () => {
               <p className='text-center'>United Bank</p>
             </div>
             <a href="" target='_blank'>
-              <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-4 py-3 font-semibold'
+              <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-16 md:px-4 py-3 font-semibold'
                 onClick={(e) => { 
                   e.preventDefault()
                   navigator.clipboard.writeText('10283454')
