@@ -1,38 +1,37 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
-    strategy:
-      matrix:
-        node-version: [18.x]
-    steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
+    steps:    
+      - name: Check out code
+        uses: actions/checkout@v3
         with:
-          version: 6.10.0
-      - uses: actions/setup-node@v3
+          fetch-depth: 2
+
+      - uses: pnpm/action-setup@v2.0.1
         with:
-          node-version: ${{ matrix.node-version }}
+          version: 6.32.2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
           cache: 'pnpm'
-      - name: build app
-        run: |
-          pnpm i
-          pnpm run build
-      - name: upload artifact
-        uses: actions/upload-pages-artifact@v1
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          path: ./build
-      - name: deploy to github pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          branch: gh-pages
+          folder: apps/web/build
