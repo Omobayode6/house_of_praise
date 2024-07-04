@@ -44,7 +44,7 @@ const Home = () => {
                 <img src={churchIcon} alt="house of praise" className='mx-auto relative'/>
               </div>
               <h3 className='mt-4 mb-2'>Praise & Worship</h3>
-              <p className='w-[350px] text-center'>Our church is open and friendly with many social activities. To keep our church running smoothly, we have committees .</p>
+              <p className='w-[330px] md:w-[350px] text-center'>Our church is open and friendly with many social activities. To keep our church running smoothly, we have committees .</p>
             </div>
 
             <div className='flex flex-col items-center'>
@@ -53,7 +53,7 @@ const Home = () => {
                 <img src={conselling} alt="house of praise" className='mx-auto relative'/>
               </div>
               <h3 className='mt-4 mb-2'>Counseling</h3>
-              <p className='w-[350px] text-center'>We exist to represent Christ to our community and world so that they might see Jesus and realize all that God has planned for them!</p>
+              <p className='w-[330px] md:w-[350px] text-center'>We exist to represent Christ to our community and world so that they might see Jesus and realize all that God has planned for them!</p>
             </div>
 
             <div className='flex flex-col items-center pb-[70px]'>
@@ -62,7 +62,7 @@ const Home = () => {
                 <img src={exhortation} alt="house of praise" className='mx-auto relative'/>
               </div>
               <h3 className='mt-4 mb-2'>Exhortation</h3>
-              <p className='w-[350px] text-center'>We invite you to see for yourself how exciting church can be when the focus is simple and people are free to go after God with passion.</p>
+              <p className='w-[330px] md:w-[350px] text-center'>We invite you to see for yourself how exciting church can be when the focus is simple and people are free to go after God with passion.</p>
             </div>
           </div>
           {/* Our Services*/}
