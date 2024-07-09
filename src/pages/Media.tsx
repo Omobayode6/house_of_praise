@@ -5,9 +5,9 @@ import HeroSection from '../components/HeroSection'
 
 const Media = () => {
   return (
-    <div className='bg-[#F9FAFB]'>
+    <div className='bg-[#F9FAFB] mt-[80px]'>
       <Header/>
-      <HeroSection subtitile='House Of Praise' titile='Media' menu='Media' bgimage='mediabg'/>
+      <HeroSection subtitile='media' titile='Join Us Online' menu='Media' bgimage='mediabg'/>
       <div className='paddingX'>
         
       </div>

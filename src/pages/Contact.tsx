@@ -2,12 +2,13 @@ import React, {useRef, useState } from "react";
 import headphone from '../assets/icons/headphone.svg'
 import chat from '../assets/icons/chat.svg'
 import check from '../assets/images/check.gif'
-import { Phone, Mail  } from 'lucide-react'
+import { Phone, Mail, Users  } from 'lucide-react'
 import emailjs from '@emailjs/browser';
 import { AlertTriangle } from "lucide-react";
 import Header from "../components/reusable/Header";
 import HeroSection from "../components/HeroSection";
 import Footer from "../components/reusable/Footer";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -38,19 +39,19 @@ const Contact = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-[#f2f8fc] mt-[110px]'>
+      <div className='bg-[#f2f8fc] mt-[80px]'>
         <HeroSection subtitile='Reach Out' titile='Contact Us' menu='Contact' bgimage='contactbg'/>
         {/* Contact Cards */}
         <div className='px-[5%] flex flex-col md:flex-row justify-center items-center gap-8 md:absolute left-0 right-0'>
           <div className='bg-white max-w-[520px] h-[461px] rounded-[12px] p-[40px] flex flex-col justify-center items-center gap-8 '>
-            <img src={headphone} alt="Call Prometrics" />
-            <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight '>Join us Today!</h4>
+            <Users size={100} className="" />
+            <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight '>I want someone to pray with me.</h4>
             <p className='text-center'>Ready to take the next step in your spiritual jouney with God?</p>
-            <a href="" target='_blank'>
+            <Link to="/prayer">
               <button className='outline-button type1 outline-btn-txt w-full sm:w-[218px] rounded-[40px] text-primary text-base border border-primary px-16 md:px-4 py-3 font-semibold'>
-                Join us
+                Request
               </button>
-            </a>
+            </Link>
           </div>
           <div className='bg-white max-w-[520px] h-[461px] rounded-[12px] p-[40px] flex flex-col justify-center items-center gap-8 '>
             <img src={chat} alt="Call Prometrics" />
@@ -99,7 +100,7 @@ const Contact = () => {
               <label htmlFor="message">Message</label>
               <textarea name="message" id="" cols={10} rows={5} placeholder='Type your message here...'></textarea>
             </div>
-            <button type='submit' className='forward-button w-full sm:w-[218px] bg-primary rounded-[40px] text-white text-base px-4 py-3 font-semibold'>
+            <button type='submit' className='forward-button w-full sm:w-[218px] bg-white rounded-[40px] text-black text-base px-4 py-3 font-semibold'>
               <span className=''>Send your message</span>
             </button>
           </form>

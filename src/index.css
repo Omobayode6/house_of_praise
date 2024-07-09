@@ -30,7 +30,7 @@ input{
   @apply h-[56px];
 }
 input, textarea{
-  @apply outline-none border border-[#D0D5DD] placeholder-[#B6BABD] text-[#C2C6CA] rounded-[6px] p-[16px] bg-transparent
+  @apply outline-none border border-[#D0D5DD] text-[#C2C6CA] placeholder-[#B6BABD] rounded-[6px] p-[16px] bg-transparent
 }
 .homeHeader {
   @apply flex justify-between items-center gap-4 px-[5%] md:px-[3%] text-base h-[80px] fixed top-0 right-0 left-0 z-20;
@@ -174,4 +174,13 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .mediabg{
   background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(./assets/images/media.jpg)
+}
+.prayerbg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(./assets/images/prayerbg.jpg)
+}
+.eventbg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(./assets/images/event.jpg)
+}
+.givingsectionbg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./assets/images/giving.png)
 }

@@ -9,12 +9,12 @@ import pastor from '../assets/images/pastor.png'
 
 const About = () => {
   return (
-    <div className='bg-[#F9FAFB] pt-[100px] '>
+    <div className='bg-[#F9FAFB] mt-[80px] '>
       <Header/>
-      <HeroSection subtitile='House Of Praise' titile='About The Church' menu='About' bgimage='aboutbg'/>
+      <HeroSection subtitile='About The Church' titile='Welcome To House of Praise' menu='About' bgimage='aboutbg'/>
       <div className='paddingX'>
         <div className=' flex flex-col-reverse lg:flex-row items-center gap-8 py-[70px]'>
-          <img src={about} alt="Prometrics CEO" className='hidden md:flex max-w-[600px]'/>
+          <img src={about} alt="house of praise" className='hidden md:flex max-w-[600px]'/>
           <img src={aboutMobile} alt="Prometrics CEO" className='md:hidden '/>
           <div className=''>
             <div>
@@ -85,5 +85,4 @@ const About = () => {
     </div>
   )
 }
-
 export default About

@@ -8,9 +8,9 @@ import { HandCoins } from 'lucide-react'
 
 const Giving = () => {
   return (
-    <div className='bg-[#F9FAFB]'>
+    <div className='bg-[#F9FAFB] mt-[80px]'>
       <Header/>
-      <HeroSection subtitile='House Of Praise' titile='Giving' menu='Giving' bgimage='givingbg'/>
+      <HeroSection subtitile='Giving' titile='Sow A Seed' menu='Giving' bgimage='givingbg'/>
       <div className='paddingX'>
         <div className='py-[70px] flex flex-col md:flex-row justify-center gap-8'>
           <div>

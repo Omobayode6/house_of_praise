@@ -5,9 +5,9 @@ import HeroSection from '../components/HeroSection'
 
 const Ministry = () => {
   return (
-    <div className='bg-[#F9FAFB]'>
+    <div className='bg-[#F9FAFB] mt-[80px]'>
       <Header/>
-      <HeroSection subtitile='House Of Praise' titile='Ministry' menu='Ministry' bgimage='aboutbg'/>
+      <HeroSection subtitile='Ministry' titile='Join A Ministry' menu='Ministry' bgimage='aboutbg'/>
       <div className='paddingX'>
         
       </div>

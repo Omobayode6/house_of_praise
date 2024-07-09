@@ -10,6 +10,8 @@ import About from "./pages/About";
 import Ministry from "./pages/Ministry";
 import Contact from "./pages/Contact";
 import Media from "./pages/Media";
+import Events from "./pages/Events";
+import PrayerForm from "./pages/PrayerForm";
 
 
 function App() {
@@ -22,8 +24,10 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/giving" element={<Giving />} />
         <Route path="/media" element={<Media/>} />
+        <Route path="/events" element={<Events/>} />
         <Route path="/ministry" element={<Ministry />} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/prayer" element={<PrayerForm/>} />
       </Routes>
     </BrowserRouter>
     

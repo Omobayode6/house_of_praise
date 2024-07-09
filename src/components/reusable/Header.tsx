@@ -39,7 +39,8 @@ const  Header = () =>{
             <li className='hover:text-primary'><NavLink to="/about">About</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/giving">Giving</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/media">Media</NavLink></li>
-            <li className='hover:text-primary'><NavLink to="/ministry">miistries</NavLink></li>
+            <li className='hover:text-primary'><NavLink to="/events">Events</NavLink></li>
+            <li className='hover:text-primary'><NavLink to="/ministry">Miistries</NavLink></li>
             <li className='mb-6 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-primary text-white font-semibold py-5 px-4'>
@@ -57,6 +58,7 @@ const  Header = () =>{
           <li className='hover:text-primary'><NavLink to="/about">About</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/giving">Giving</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/media">Media</NavLink></li>
+          <li className='hover:text-primary'><NavLink to="/events">Events</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/ministry">Ministries</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
         </ul>
