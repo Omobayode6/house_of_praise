@@ -13,6 +13,7 @@ import { useState } from 'react'
 import ImageTextSlideUp from '../components/reusable/ImageTextSlideUp'
 import { HandCoins } from 'lucide-react'
 import { toast } from 'react-toastify'
+import Testimonials from '../components/Testimonials/Testimonials'
 
 const Home = () => {
   const [open, setOpen] = useState(false)
@@ -95,6 +96,9 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* Testimonials */}
+          <Testimonials/>
 
           {/* Ministries */}
           <div className="paddingX bg-gradient-to-b hover:bg-gradient-to-t from-black to-primary flex flex-col md:flex-row py-[100px]">

@@ -4,19 +4,19 @@ import './slider.css'
 
 const slides = [
   {
-    bgimg: "/prayer.jpg",
+    bgimg: "/house_of_praise/prayer.jpg",
     title: "Join the Prayer",
     subTitle:
       "Visit our church to experiance a different kind of worship and become a part of the flock by contributing to the community in any way you possibly can. ",
   },
   {
-    bgimg: "/prayer1.jpg",
+    bgimg: "/house_of_praise/prayer1.jpg",
     title: "Join the Prayer",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus consequuntur! Ullam nemo nostrum deserunt eaque adipisci nulla voluptate in!",
   },
   {
-    bgimg: "/prayer.jpg",
+    bgimg: "/house_of_praise/prayer.jpg",
     title: "Join the Prayer",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus consequuntur! Ullam nemo nostrum deserunt eaque adipisci nulla voluptate in!",
